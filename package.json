@@ -1,0 +1,26 @@
+{
+  "name": "session",
+  "version": "1.0.0",
+  "description": "",
+  "author": "",
+  "license": "ISC",
+  "scripts": {
+    "start": "babel-node --extensions \".ts\" index.ts",
+    "dev": "nodemon index.js -e ts",
+    "test": "jest",
+    "test:watch": "jest --watchAll",
+    "test:coverage": "jest --collectCoverage --collectCoverageFrom=**/*.ts",
+    "test-e2e": "jest --config jest-e2e.js"
+  },
+  "dependencies": {
+    "@babel/core": "^7.10.5",
+    "@babel/node": "^7.10.5",
+    "@babel/plugin-transform-typescript": "^7.10.5",
+    "@babel/preset-env": "^7.10.4",
+    "@types/express": "^4.17.7",
+    "@types/jest": "^26.0.7",
+    "express": "^4.17.1",
+    "jest": "^26.1.0",
+    "playwright": "^1.2.1"
+  }
+}
