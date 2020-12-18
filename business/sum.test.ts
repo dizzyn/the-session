@@ -6,6 +6,7 @@ it("Sum valid cases", function () {
   expect(sum(-2, 0)).toBe(-2);
   expect(sum(0, -0)).toBe(0);
   expect(sum(1, -2)).not.toBe(3);
+  expect(sum(0, 0)).toBe(0);
 });
 
 it("Floats", function () {
